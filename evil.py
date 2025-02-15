@@ -4,7 +4,8 @@ from collections import defaultdict
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 from motor.motor_asyncio import AsyncIOMotorClient
-
+from keep_alive import keep_alive
+keep_alive()
 bot_start_time = datetime.now()
 attack_in_progress = False
 current_attack = None  # Store details of the current attack
