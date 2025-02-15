@@ -1,4 +1,6 @@
 import subprocess
+from keep_alive import keep_alive
+keep_alive()
 
 # List of scripts to run
 scripts = ["evil.py", "group.py"]
